@@ -28,6 +28,7 @@ void SetConfig(AnalysisConfig *cfg) {
   cfg->SwitchSpecifyInputNames();
   cfg->SetCpuMathLibraryNumThreads(FLAGS_paddle_num_threads);
   cfg->EnableMKLDNN();
+  cfg->EnableProfile();
 }
 
 template <typename T>
